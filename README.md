@@ -12,5 +12,6 @@
       ```
       npm run coverage
    ```
+   After that you can open coverage/lcov-report/src/index.html
    
 
