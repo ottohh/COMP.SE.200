@@ -8,5 +8,9 @@
       ```
       npm run test
    ```
+3. **Run coverage reporting**
+      ```
+      npm run coverage
+   ```
    
 
