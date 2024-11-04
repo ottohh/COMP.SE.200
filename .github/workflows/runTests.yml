@@ -40,5 +40,5 @@ jobs:
       # Step 5: Produce coverage
       - name: Produce coverage
         env:
-          COVERALLS_REPO_TOKEN: wy6XkbKw6c65hrwJFl8MyfoXkucdzyXv2
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_KEY }}
         run: npm run coveralls
