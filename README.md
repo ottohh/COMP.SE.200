@@ -11,6 +11,7 @@
 3. **Run coverage reporting**
       ```
       npm run coverage
-   ``` After that you can open coverage/lcov-report/src/index.html
+   ```
+       Coverage report appears in coverage/lcov-report/src/index.html
 [![Coverage Status](https://coveralls.io/repos/github/ottohh/COMP.SE.200/badge.svg?branch=main)](https://coveralls.io/github/ottohh/COMP.SE.200?branch=main)   
 
