@@ -36,3 +36,9 @@ jobs:
       # Step 4: Run Jest tests
       - name: Run Jest tests
         run: npm test # or 'npx jest' if Jest is not the default test script in package.json
+
+      # Step 5: Produce coverage
+      - name: Produce coverage
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_KEY }}
+        run: npm run coveralls
