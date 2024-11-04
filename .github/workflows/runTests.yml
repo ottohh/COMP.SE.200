@@ -2,6 +2,9 @@
 
 name: CI
 
+env:
+- COVERALLS_REPO_TOKEN=wy6XkbKw6c65hrwJFl8MyfoXkucdzyXv2
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -36,3 +39,7 @@ jobs:
       # Step 4: Run Jest tests
       - name: Run Jest tests
         run: npm test # or 'npx jest' if Jest is not the default test script in package.json
+
+      # Step 5: Produce coverage
+      - name: Produce coverage
+        run: jest --coverage && coveralls < coverage/lcov.info
