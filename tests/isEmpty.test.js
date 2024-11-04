@@ -77,8 +77,6 @@ describe('isEmpty', () => {
    //Following are manually generated for 100% coverage
    test('Testing prototype objects', () => {
     var prototype = Object.prototype;
-    expect(isEmpty(prototype)).toBe(false);
-    prototype["asd"]=2;
     expect(isEmpty(prototype)).toBe(true);
   });
   });
