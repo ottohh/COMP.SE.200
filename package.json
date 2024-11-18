@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage",
     "coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
